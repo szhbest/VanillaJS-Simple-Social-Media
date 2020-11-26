@@ -173,7 +173,7 @@ Your backend server must be running for your frontend to interact with it. Your 
 
 ### 3.1. Exploring the DB
 
-If you're comfortable with basic SQL, in the `ass2-backend` folder, you can upload the `db/test.sqlite3` file to an online explorer such as (sqliteonline.com)[sqliteonline.com].
+If you're comfortable with basic SQL, in the `backend` folder, you can upload the `db/test.sqlite3` file to an online explorer such as (sqliteonline.com)[sqliteonline.com].
 
 To get started, though, here are some usernames that you can have test accounts "follow":
 * Andrew
