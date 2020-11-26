@@ -173,19 +173,11 @@ Your backend server must be running for your frontend to interact with it. Your 
 
 ### 3.1. Exploring the DB
 
-If you're comfortable with basic SQL, in the `backend` folder, you can upload the `db/test.sqlite3` file to an online explorer such as (sqliteonline.com)[sqliteonline.com].
+If you're interested in the db, you can head to the `VanillaJS-Simple-Social-Media/backend/db`, and then type
 
-To get started, though, here are some usernames that you can have test accounts "follow":
-* Andrew
-* Ava
-* Sarah
-* Matthew
-* Jack
-* Harper
-* Zoe
-* Amelia
+`sqlite3 test.sqlite3`
 
-For example, after registering a user, you can call `PUT /user/follow` to follow one of these users. After that, if you call `GET /user/feed` you will be able to see updates on the feed.
+to see more details of the current db. You can use the command like `.schema` to see all the tables information, and then do some specific select operation on some tables.
 
 
 
