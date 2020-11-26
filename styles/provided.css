@@ -1,0 +1,441 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+/* Add your styles here */
+* {
+    box-sizing: border-box;
+}
+
+/* Feed Page css */
+
+#feed {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.my-profile-btn {
+    width: 20%;
+    margin-top: 10px;
+}
+
+/* Post container */
+.display-post {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 30%;
+    object-fit: contain;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.details-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.post-author {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post-time {
+    font-size: 10px;
+}
+
+
+.post-text {
+    font-size: 20px;
+}
+
+.like-unlike-comment-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.like-btn, .unlike-btn, .comment-btn {
+    width: 20%;
+    margin-right: 5px;
+}
+
+.likes-comments {
+    display: flex;
+    flex-direction: row;
+}
+
+.likes, .comments {
+    width: 50%;
+    text-align: center;
+    background-color: rgba(120, 120, 122, 0.1);
+}
+
+
+/* Show Likes css */
+.show-likes::before {
+    content: 'Who likes:';
+    font-weight: bold;
+    color: black;
+}
+
+.show-likes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-name {
+    font-size: 15px;
+    margin: 5px 10px;
+    color: rgb(243, 191, 78)
+}
+
+/* Show Comments css */
+.show-comments::before {
+    content: 'Comments:';
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(194, 193, 193);
+    margin-top: 10px;
+}
+
+.show-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.each-comment {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(194, 193, 193);
+}
+
+.author-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-author {
+    font-size: 15px;
+    white-space: pre;
+    margin-bottom: 5px;
+    color: rgb(243, 191, 78);
+}
+
+.comment-content {
+    font-size: 18px;
+}
+
+.comment-time {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.author-follow {
+    display: inline;
+}
+
+.follow-btn {
+    float: right;
+    font-size: 15px;
+}
+
+/* Profile Page css */
+#profile {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.user-bar {
+    display: flex;
+}
+
+.username {
+    font-size: 15px;
+    border: 1px solid red;
+}
+
+.following-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.username-follow-container {
+    /* username name one the left, follow-btn on the right */
+    display: inline;
+    padding: 5px;
+    border-bottom: 1px solid rgb(194, 193, 193);
+}
+
+.follow-username {
+    float: left;
+    font-size: 15px;
+}
+
+.profile-posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.make-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-textarea, #new-post-textarea, .edit-textarea {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 15px;
+}
+
+#postSrc {
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.post-comment-btn, #new-post-btn, .edit-text-btn {
+    width: 15%;
+    margin: 0 auto 10px;
+}
+
+
+/* My Profile Page css */
+#my-profile {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.return-feed {
+    width: 20%;
+    margin-top: 10px;
+}
+
+#my-info-container, #profile-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-info-row, .profile-info-row {
+    display: flex;
+    margin-top: 10px;
+}
+
+.my-info-component, .followers-num, .profile-info-component {
+    flex: 1;
+    font-size: 20px;
+}
+
+.my-update-btn, .my-make-post-btn, .following-div{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#update-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#submit-update-btn {
+    width: 15%;
+    font-size: 15px;
+}
+
+#make-new-post {
+    display: flex;
+    flex-direction: column;
+}
+
+#post-src {
+    font-size: 15px;
+}
+
+
+.author-edit-delete {
+    display: inline;
+}
+
+.edit-btn, .delete-btn {
+    float: right;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+
+.edit-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    display: none;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    animation: spin 1s linear infinite;
+}
+
+.search-name {
+    display: none;
+    float: right;
+    width: 100px;
+    margin-right: 10px;
+    transition: width .5s;
+}
+
+.search-follow-btn {
+    display: none;
+    float: right;
+}
+
+.form-position {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    * {
+        font-size: 10px;
+    }
+
+    .my-profile-btn {
+        width: 30%;
+        margin-top: 10px;
+    }
+
+    .post-comment-btn, #new-post-btn, .edit-text-btn {
+        width: 20%;
+    }
+
+    .post-author, .post-text {
+        font-size: 15px;
+    }
+
+    .show-comments::before {
+        font-size: 10px;
+    }
+
+    .follow-btn, .comment-author, .comment-content, .delete-btn, .edit-btn, .my-update-btn, 
+    .my-make-post-btn, .following-div, .follow-username {
+        font-size: 10px;
+    }
+
+    .like-name {
+        font-size: 10px;
+        margin: 5px 5px;
+    }
+
+    .comment-textarea, #new-post-textarea, .edit-textarea {
+        font-size: 10px;
+        width: 70%;
+    }
+
+    #postSrc {
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+    #submit-update-btn {
+        font-size: 10px;
+        width: 25%;
+    }
+
+    .my-info-component, .followers-num, .profile-info-component{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    .following-list {
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .like-btn, .unlike-btn, .comment-btn {
+        width: 25%;
+        margin-right: 5px;
+    }
+
+    .my-info-component, .followers-num, .profile-info-component{
+        font-size: 10px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .like-btn, .unlike-btn, .comment-btn {
+        width: 30%;
+        margin-right: 5px;
+    }
+}
+
